@@ -6,7 +6,7 @@
 /*   By: juhyeonl <juhyeonl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:32:26 by juhyeonl          #+#    #+#             */
-/*   Updated: 2025/12/30 12:21:35 by juhyeonl         ###   ########.fr       */
+/*   Updated: 2025/12/30 12:26:10 by juhyeonl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ Fixed::~Fixed()
 
 int		Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
+	// std::cout << "getRawBits member function called" << std::endl;
 	return (this->_fixedValue);
 }
 
 void	Fixed::setRawBits(int const raw)
 {
-	std::cout << "setRawBits member function called" << std::endl;
+	// std::cout << "setRawBits member function called" << std::endl;
 	this->_fixedValue = raw;
 }
 
@@ -74,5 +74,5 @@ int		Fixed::toInt(void) const
 std::ostream & operator<<(std::ostream & o, Fixed const & i)
 {
 	o << i.toFloat();
-	return (0);
+	return (o);
 }

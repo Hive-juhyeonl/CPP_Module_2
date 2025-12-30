@@ -6,7 +6,7 @@
 /*   By: juhyeonl <juhyeonl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:29:36 by juhyeonl          #+#    #+#             */
-/*   Updated: 2025/12/30 12:20:59 by juhyeonl         ###   ########.fr       */
+/*   Updated: 2025/12/30 12:26:08 by juhyeonl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ public:
 	Fixed(const float f);
 	float	toFloat(void) const;
 	int		toInt(void) const;
-	std::ostream & operator<<(std::ostream & o, Fixed const & i);
 };
+std::ostream & operator<<(std::ostream & o, Fixed const & i);
 
 #endif
