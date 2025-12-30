@@ -6,11 +6,11 @@
 /*   By: JuHyeon <JuHyeon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:32:26 by juhyeonl          #+#    #+#             */
-/*   Updated: 2025/12/30 23:08:05 by JuHyeon          ###   ########.fr       */
+/*   Updated: 2025/12/30 22:58:39 by JuHyeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
+#include "../include/Fixed.hpp"
 
 Fixed::Fixed()
 {
