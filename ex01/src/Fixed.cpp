@@ -6,7 +6,7 @@
 /*   By: JuHyeon <JuHyeon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:32:26 by juhyeonl          #+#    #+#             */
-/*   Updated: 2025/12/30 23:08:05 by JuHyeon          ###   ########.fr       */
+/*   Updated: 2026/01/01 00:38:14 by JuHyeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,23 +52,23 @@ void	Fixed::setRawBits(int const raw)
 Fixed::Fixed(const int i)
 {
 	std::cout << "Int constructor called" << std::endl;
-	this->_fixedValue = i << this->_fractalBits;
+	this->_fixedValue = i << this->_fractionBits;
 }
 
 Fixed::Fixed(const float f)
 {
 	std::cout << "Float constructor called" << std::endl;
-	this->_fixedValue = roundf(f * (1 << this->_fractalBits));
+	this->_fixedValue = roundf(f * (1 << this->_fractionBits));
 }
 
 float	Fixed::toFloat(void) const
 {
-	return ((float)this->_fixedValue / (1 << this->_fractalBits));
+	return ((float)this->_fixedValue / (1 << this->_fractionBits));
 }
 
 int		Fixed::toInt(void) const
 {
-	return (this->_fixedValue >> this->_fractalBits);
+	return (this->_fixedValue >> this->_fractionBits);
 }
 
 // If use Fixed class without any function at std::cout for directelly

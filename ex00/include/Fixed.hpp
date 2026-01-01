@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juhyeonl <juhyeonl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: JuHyeon <JuHyeon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:29:36 by juhyeonl          #+#    #+#             */
-/*   Updated: 2025/12/30 11:32:23 by juhyeonl         ###   ########.fr       */
+/*   Updated: 2026/01/01 00:38:14 by JuHyeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Fixed {
 private:
 	int					_fixedValue;
-	static const int	_fractalBits = 8;
+	static const int	_fractionBits = 8;
 
 public:
 	Fixed();
