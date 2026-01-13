@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: JuHyeon <JuHyeon@student.42.fr>            +#+  +:+       +#+        */
+/*   By: juhyeonl <juhyeonl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:29:36 by juhyeonl          #+#    #+#             */
-/*   Updated: 2026/01/01 00:38:14 by JuHyeon          ###   ########.fr       */
+/*   Updated: 2026/01/13 04:58:41 by juhyeonl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
 	~Fixed();
 
 	int		getRawBits() const;
-	void	Fixed::setRawBits(int const raw);
+	void	setRawBits(int const raw);
 };
 
 #endif

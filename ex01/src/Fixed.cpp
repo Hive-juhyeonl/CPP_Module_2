@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: JuHyeon <JuHyeon@student.42.fr>            +#+  +:+       +#+        */
+/*   By: juhyeonl <juhyeonl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 10:32:26 by juhyeonl          #+#    #+#             */
-/*   Updated: 2026/01/01 00:38:14 by JuHyeon          ###   ########.fr       */
+/*   Updated: 2026/01/13 20:23:43 by juhyeonl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,10 @@ void	Fixed::setRawBits(int const raw)
 	this->_fixedValue = raw;
 }
 
+/*
+i << this->_fractionBits is 2^8 == 256 
+*/
+
 Fixed::Fixed(const int i)
 {
 	std::cout << "Int constructor called" << std::endl;
@@ -73,7 +77,7 @@ int		Fixed::toInt(void) const
 
 // If use Fixed class without any function at std::cout for directelly
 // then, It need to overloading.
-std::ostream & operator<<(std::ostream & o, Fixed const & i)
+std::ostream& operator<<(std::ostream& o, Fixed const& i)
 {
 	o << i.toFloat();
 	return (o);
